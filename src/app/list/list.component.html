@@ -1,5 +1,9 @@
-<div *ngFor="let num of numsArr">
-  <ul>
-    <li>{{ num }}</li>
-  </ul>
+<div class="scrollbar" id="style-1" (scroll)="onScroll($event)">
+  <div class="force-overflow">
+    <div *ngFor="let num of dataArr">
+      <ul>
+        <li>{{ num }}</li>
+      </ul>
+    </div>
+  </div>
 </div>
